@@ -1,7 +1,9 @@
-let numero = prompt("Digite um número");
+let resposta = prompt("Qual a sua idade?");
 
-function verificaParOuImpar(numero) {
-    return numero % 2 === 0 ? "Par" : "Ímpar";
-}
+    if (resposta >= 18) {
+        console.log("Você é maior de idade");
+    } else {
+        console.log("Você é menor de idade");
+    };
 
-console.log(verificaParOuImpar(numero));
+console.log("Sua idade é", resposta)
