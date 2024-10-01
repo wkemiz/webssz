@@ -1,9 +1,10 @@
-let resposta = prompt("Qual a sua idade?");
+let numero = prompt("Digite um número");
 
-    if (resposta >= 18) {
-        console.log("Você é maior de idade");
-    } else {
-        console.log("Você é menor de idade");
-    };
+function tabuada(numero) {
+    for (let i = 1; i <= 10; i++) {
+        const resultado = numero * i;
+        console.log(`${numero} x ${i} = ${resultado}`);
+    }
+}
 
-console.log("Sua idade é", resposta)
+tabuada(numero);
